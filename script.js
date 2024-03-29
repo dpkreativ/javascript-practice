@@ -73,15 +73,15 @@ let vegetables = ['tomato', 'cucumber'];
 // };
 
 // ===== NUMBERS =======
-let age = 26;
-const gravity = 9.81;
-let mass = 83;
-const PI = 3.14;
+// let age = 26;
+// const gravity = 9.81;
+// let mass = 83;
+// const PI = 3.14;
 
-console.log('Data:', gravity, 'Data type:', typeof gravity);
+// console.log('Data:', gravity, 'Data type:', typeof gravity);
 
 // ==== Mathematical operations using JavaScript's Math Object ====
-const pie = Math.PI;
+// const pie = Math.PI;
 
 // Weekend assignment
 /**
@@ -97,3 +97,89 @@ const pie = Math.PI;
  * BONUS:
  * - Create and deploy a web page that generates a random Nigerian phone number in the +234 format.
  */
+
+// ===== STRINGS =======
+// let greeting = 'Hello Divine';
+
+// console.log(greeting);
+
+// let wiseSayings =
+//   '"He who sneezes once, should get a handkie", the old man said';
+
+// console.log(wiseSayings);
+
+// let funnyTalk = `"That's why it's good to eat meat", the butcher bellowed`;
+
+// console.log(funnyTalk);
+
+// Example:
+// let firstName = 'Divine';
+// let lastName = 'Orji';
+
+// let fullName = firstName + ' ' + lastName;
+
+// let fullName = `My name is ${(firstName = 'David')}, and 2 + 2 is ${2 + 2}`;
+
+// console.log(fullName);
+
+// String concatenation
+// let firstName = prompt('put in your first name:');
+
+// let lastName = prompt('put in your last name:');
+
+// let age = prompt('put in your age in years:');
+
+// console.log('AGE INPUT AS STRING:', age);
+// console.log('AGE INPUT AS NUMBER:', Number(age));
+
+// let fullName = 'Your name is' + ' ' + firstName + ' ' + lastName;
+
+// let fullName = `Your name is ${firstName} ${lastName}. You have lived for ${
+//   365 * age
+// } days`;
+
+// alert(fullName);
+// console.log(fullName);
+
+// STRING PROPERTIES AND METHODS
+// let fruit = 'pineapple';
+
+// console.log(fruit[fruit.length - 1]);
+
+// console.log(fruit.substring(4, 7));
+
+// let firstName = prompt();
+
+// let lastName = prompt('pls put in your last name:');
+
+// let fullName = 'Your name is ' + firstName + ' ' + 'lastName';
+
+// let fullName = `My name is ${firstName}, my last name is ${lastName}, and I have lived for ${
+//   365 * 26
+// } days`;
+
+// alert(fullName);
+
+// eggs, milk, bread, butter, oranges, beef
+
+const gs = document.getElementById('grocery-string');
+
+const gl = document.getElementById('grocery-list');
+
+let groceryString = prompt('List out the groceries you want to buy');
+
+console.log(groceryString);
+
+gs.innerHTML = `<p>${groceryString}</p>`;
+
+let groceryList = groceryString.split(', ');
+
+let x = '';
+
+for (let i = 0; i < groceryList.length; i++) {
+  x + `<li>${groceryList[i]}</li>`;
+}
+
+gl.innerHTML = `<ul>
+${x}
+</ul>`;
