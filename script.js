@@ -148,38 +148,49 @@ let vegetables = ['tomato', 'cucumber'];
 
 // console.log(fruit.substring(4, 7));
 
-// let firstName = prompt();
+// let firstName = prompt('pls put in your first name:');
 
 // let lastName = prompt('pls put in your last name:');
 
-// let fullName = 'Your name is ' + firstName + ' ' + 'lastName';
+// let fullName = 'Your name is ' + firstName + ' ' + lastName;
 
+// let age = prompt('pls put in your age:');
+
+// alert(fullName);
 // let fullName = `My name is ${firstName}, my last name is ${lastName}, and I have lived for ${
-//   365 * 26
-// } days`;
+//   365 * age
+// } days`; // Template String
 
 // alert(fullName);
 
 // eggs, milk, bread, butter, oranges, beef
 
+// console.log(document);
+
 const gs = document.getElementById('grocery-string');
 
-const gl = document.getElementById('grocery-list');
+console.log(gs);
 
-let groceryString = prompt('List out the groceries you want to buy');
+// const gl = document.getElementById('grocery-list');
 
-console.log(groceryString);
+// let groceryString = prompt('List out the groceries you want to buy');
 
-gs.innerHTML = `<p>${groceryString}</p>`;
+// console.log(groceryString);
 
-let groceryList = groceryString.split(', ');
+// gs.innerHTML = `<p>${groceryString}</p>`;
 
-let x = '';
+// let groceryList = groceryString.split(', ');
 
-for (let i = 0; i < groceryList.length; i++) {
-  x + `<li>${groceryList[i]}</li>`;
-}
+// console.log(groceryList);
 
-gl.innerHTML = `<ul>
-${x}
-</ul>`;
+// ['oranges', 'bananas', 'ugu leaves', 'pepper', 'tomatoes', 'salt', 'palm oil']
+
+// let x = '';
+
+// for (let i = 0; i < groceryList.length; i++) {
+//   x = x + `<li>${groceryList[i]}</li>`;
+// }
+
+// gl.innerHTML = `<ul>
+// ${x}
+// </ul>`;
