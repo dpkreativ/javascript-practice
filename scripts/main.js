@@ -1,26 +1,11 @@
-/* switch (answer) {
-  case "abuja":
-    alert("Correct!");
-    break;
-    case "lagos":
-      alert("Okay Grandpa.");
-      break;
-      case "calabar":
-        alert("Ancestor you go collect kola?");
-        break;
-        default:
-          alert("Eh for where? Mmm?");
-}
-*/
+// CONCATENATION
 
-const answer = prompt("What is the capital of Nigeria").toLowerCase();
+let firstName = "Joseph";
 
-if (answer === "abuja") {
-  alert("correct.");
-} else if (answer === "lagos") {
-  alert("ok grandpa.");
-} else if (answer === "calabar") {
-  alert("ancestor you go collect kola?.");
-} else {
-  alert("eh for where? mmm?");
-}
+let age = 82;
+
+let sentence = firstName + " is " + age + " years old"; // concatenated string
+
+let tempSentence = `${firstName} is ${age} years old`; // template string
+
+console.log(tempSentence);
